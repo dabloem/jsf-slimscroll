@@ -1,55 +1,57 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.billingstreet.slimscroll</groupId>
-  <artifactId>slimscroll</artifactId>
-  <version>1.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <groupId>com.billingstreet.slimscroll</groupId>
+    <artifactId>slimscroll</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-  <name>slimscroll</name>
-  <url>http://maven.apache.org</url>
+    <name>slimscroll</name>
+    <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.10</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>javax.faces</groupId>
-      <artifactId>jsf-api</artifactId>
-      <version>2.1</version>
-    </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.faces</groupId>
+            <artifactId>jsf-api</artifactId>
+            <version>2.1</version>
+        </dependency>
         <dependency>
             <groupId>org.richfaces.ui</groupId>
             <artifactId>richfaces-components-ui</artifactId>
             <version>4.3.0.Final</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.richfaces.core</groupId>
             <artifactId>richfaces-core-impl</artifactId>
             <version>4.3.0.Final</version>
+            <scope>provided</scope>
         </dependency>
-  </dependencies>
+    </dependencies>
   
-  <scm>
-      <url>http://github.com/dabloem/jsf-slimscroll</url>
-      <connection>scm:git:git@github.com:dabloem/jsf-slimscroll.git</connection>
-  </scm>
+    <scm>
+        <url>http://github.com/dabloem/jsf-slimscroll</url>
+        <connection>scm:git:git@github.com:dabloem/jsf-slimscroll.git</connection>
+    </scm>
   
-  <distributionManagement>
-      <repository>
-          <id>billingstreet-private</id>
-          <url>http://nexus.billingstreet.com:8181/nexus/content/repositories/thirdparty/</url>
-      </repository>
-      <snapshotRepository>
-          <id>billingstreet-private</id>
-          <url>http://nexus.billingstreet.com:8181/nexus/content/repositories/thirdparty/</url>
-      </snapshotRepository>
-  </distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>billingstreet-private</id>
+            <url>http://nexus.billingstreet.com:8181/nexus/content/repositories/thirdparty/</url>
+        </repository>
+        <snapshotRepository>
+            <id>billingstreet-private</id>
+            <url>http://nexus.billingstreet.com:8181/nexus/content/repositories/thirdparty/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
